@@ -18,8 +18,8 @@
 
 .coloured-top{
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     color: rgb(69, 73, 73);
@@ -27,5 +27,17 @@
 
 .coloured-text{
     font-size: large;
+    margin-top: 20px;
 }
 
+.car-text{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.footer{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+}

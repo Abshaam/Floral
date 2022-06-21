@@ -18,6 +18,15 @@ import col8 from '../images/pink.jpg';
 import col9 from '../images/mixed.jpg';
 import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
+import  Carousel  from 'react-bootstrap/Carousel';
+import car1 from '../images/lookup.jpg';
+import car2 from '../images/long.jpg';
+import car3 from '../images/smell.jpg';
+import car4 from '../images/vision.jpg';
+import car5 from '../images/kiddo.jpg';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
+
 // import Button from 'react-bootstrap/Button'
 
 export default function Index (){
@@ -276,6 +285,81 @@ export default function Index (){
 
 
     </Container>
+
+    {/* Carousel */}
+    <Container> 
+      <Row>
+        <Col 
+        // style={{ marginLeft: 200 }}
+        //  ml={3} md={8} sm={8} xs={8}
+          >
+    <Carousel variant="dark">
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={car1}
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h2 className='car-text'>Flowers always make people better, happier and more helpful. </h2>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src = { car2 }
+      alt="Second slide"
+    />
+    <Carousel.Caption>
+      <h2 className='car-text'>No matter how chaotic it is, wildflowers will still spring up in the middle of nowhere.</h2>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src = { car3 }
+      alt="Third slide"
+    />
+    <Carousel.Caption>
+      <h2 className='car-text'>In a field of roses be a wildflower and let your dreams blossom.</h2>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src = {car4}
+      alt="Second slide"
+    />
+    <Carousel.Caption>
+      <h2 className='car-text'>Flowers are sunshine, food and medicine for the soul</h2>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src = { car5 }
+      alt="Second slide"
+    />
+    <Carousel.Caption>
+      <h2 className='car-text'>how intricate they are, yet what simplicity and joy they bring to a moment, to life.</h2>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+
+      
+     </Col>
+
+         </Row>
+
+     </Container>
+
+     {/* footer */}
+
+     <Container>
+
+     <h4 className='footer'> Designed by Ushy@div 2022</h4>
+
+     </Container>
         </>
     )
 }
