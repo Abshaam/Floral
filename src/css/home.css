@@ -1,0 +1,28 @@
+
+
+
+.bg-dark {
+   --bs-bg-opacity: 0;
+}
+
+.card-text {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    
+}
+
+
+.card-img-overlay{
+    /* margin-left: 30%; */
+    margin-left: 42%;
+    text-align: center;
+    margin-top: 36%; 
+}
+
+.card-header{
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;
+}

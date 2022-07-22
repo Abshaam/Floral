@@ -34,9 +34,9 @@ function App() {
             <Nav.Link href="/home"> Home </Nav.Link>
             <Nav.Link href="/about"> About </Nav.Link>
             <NavDropdown title=" Categories " id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Exotic</NavDropdown.Item>
+              <NavDropdown.Item href="#action3">Annual </NavDropdown.Item>
               <NavDropdown.Item href="#action4">
-                Non exotic
+                Perennial
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
