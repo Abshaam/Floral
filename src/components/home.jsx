@@ -28,7 +28,7 @@ export default function Home() {
 
         <Card className="bg-dark text-white">
           <Card.Img src={pic1} alt="Card image" />
-          <Card.ImgOverlay>
+          <Card.ImgOverlay className='overlay'>
             <h2 className='language-text'>
 
               <Badge bg="warning" >
