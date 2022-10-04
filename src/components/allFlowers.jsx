@@ -3,8 +3,9 @@ import { getAllFlowers } from "../allData";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-// import pic2 from "../images/primerose.jpg"
+import pic5 from "../images/allFlowers/womanmodel.jpg"
 import { Container} from 'react-bootstrap';
+import Badge from 'react-bootstrap/Badge';
 
 export default function AllFlowers (){
     
@@ -13,6 +14,15 @@ export default function AllFlowers (){
         <>
         <Container>
 
+        <h2 className='welcome'>
+          <Badge bg="secondary"> Welcome to All Flowers </Badge>
+        </h2>
+
+        
+        {/* <Card.Img variant="top" 
+      style={{ marginTop: 40,   marginButton: 40 }}
+       src={pic5} className='img-fluid rounded-circle border border-3 border-light'  alt="" />
+       */}
        <Row xs={2} md={2} className="g-4">
       {flowers.map((flower) => (
           <NavLink
@@ -21,11 +31,13 @@ export default function AllFlowers (){
           >
         <Col>
           <Card>
-          <Card.Img variant="top" src={flower.src} alt="" />
+          {/* <Card.Img variant="top" src= {flower.src} alt="" /> */}
             <Card.Body>
               <Card.Title> {flower.title}</Card.Title>
               <Card.Text>
+              <Card>
               {flower.src}
+              </Card>
               </Card.Text>
             </Card.Body>
           </Card>

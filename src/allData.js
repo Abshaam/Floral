@@ -1,27 +1,27 @@
-import pic1 from "./images/pansySeedling.jpg"
-import pic2 from "./images/primerose.jpg"
-import pic3 from "./images/marigold.jpg"
-import pic4 from "./images/snapdragon.jpg"
-import pic5 from "./images/geranium.jpg"
-import pic6 from "./images/sunflower.jpg"
-import pic7 from "./images/begonia.jpg"
-import pic8 from "./images/pertunia.jpg"
-import pic9 from "./images/chrysanthemum.jpg"
-import pic10 from "./images/sweetpea.jpg"
-import pic11 from "./images/viola.jpg"
-import pic12 from "./images/chrysanthemum.jpg"
+import pic1 from "./images/allFlowers/pansySeedling.jpg"
+import pic2 from "./images/allFlowers/primerose1.jpg"
+import pic3 from "./images/allFlowers/marigold.jpg"
+import pic4 from "./images/allFlowers/snapdragon.jpg"
+import pic5 from "./images/allFlowers/geranium.jpg"
+import pic6 from "./images/allFlowers/sunflower.jpg"
+import pic7 from "./images/allFlowers/begonia.jpg"
+import pic8 from "./images/allFlowers/petunia.jpg"
+import pic9 from "./images/allFlowers/chrysanthemums.jpg"
+import pic10 from "./images/allFlowers/sweetpea.jpg"
+import pic11 from "./images/allFlowers/viola.jpg"
+import pic12 from "./images/allFlowers/zinnia.jpg"
 import pic13 from "./images/perennial/daylily.jpg"
 import pic14 from "./images/perennial/peony.jpg"
-import pic15 from "./images/perennial/shasta.jpg"
+import pic15 from "./images/allFlowers/shasta.jpg"
 import pic16 from "./images/perennial/lavender.jpg"
-import pic17 from "./images/perennial/lilac.jpg"
+import pic17 from "./images/allFlowers/lilac.jpg"
 import pic18 from "./images/perennial/hibiscus.jpg"
 import pic19 from "./images/perennial/hydrangea.jpg"
 import pic20 from "./images/perennial/azalea.jpg"
-import pic21 from "./images/perennial/rhododendron.jpg"
+import pic21 from "./images/allFlowers/rhododendron.jpg"
 import pic22 from "./images/floweringTree/cherrytree.jpg"
-import pic23 from "./images/floweringTree/almondtree.jpg"
-import pic24 from "./images/floweringTree/plumtree.jpg"
+import pic23 from "./images/allFlowers/almondtree.jpg"
+import pic24 from "./images/allFlowers/plumtree.jpg"
 import pic25 from "./images/floweringTree/crabapple.jpg"
 import pic26 from "./images/floweringTree/magnolia.jpg"
 import pic27 from "./images/floweringTree/pearblossom.jpg"
@@ -79,7 +79,7 @@ let allFlowers = [
       id: 3,
       src: <img src={pic3} alt=''/>,
       title: "Marigolds",
-      header: 'Dried Marigold flowers in a wooden bowl, herbal tea, alternative medicine.',
+      header: 'Glass bottle of calendula essential oil with fresh marigold flowers on wooden table. Aromatherapy marigold oil herbal medicine background concept with copy space',
       description: "Marigold is one of the most popular and famous type of annual flower that can be found in many gardens. Appreciated around the world for their beautiful flowers, marigolds are a type of flowering plant from the Calendula genius. Common marigold flowers are generally large flowers with bright yellow or orange-colored petals and the flower head has a dark center. The incredibly beautiful flower head is made up of tiny petals that can have about 6 or 7 layers. Marigolds bloom in the summertime and can continue flowering until early fall. The famous marigold flowers are a perfect type of garden flower because they add great color",
     },
     {
@@ -148,7 +148,7 @@ let allFlowers = [
       {
         id: 11,
         src: <img src={pic11} alt=''/>,
-        title: "Winter Viola flowers",
+        title: "Winter Viola flower",
         header: "Violas flower throughout fall and winter and display a stunning array of color",
         description: "Viola is a flowering plant in the violet family Violaceae. They are perennials, but they are usually treated as annuals, invaluable for fall, winter and spring. Violas are heart-shaped or kidney-shaped and their colors include yellow, orange, blue, scarlet, white and violet, or multi-colored. Plant violas in the fall if you want them to flower on and off during the winter months. Winter violas are tough enough to survive cold weather and can flower all through the winter. Winter violas have small flowers that come in many color combinations so they will brighten your garden during winter time."
       },
@@ -261,7 +261,7 @@ let allFlowers = [
     {
       id: 23,
       src: <img src={pic23} alt=''/>,
-      title: "Flowering almond tree",
+      title: "Flowering almond trees",
       header: "Big white almond tree in the field",
       description: "The almond tree also tops the list of the most beautiful blossoming trees. Although technically a type of flowering shrub, most gardeners grow almond shrubs as trees. Pink or white blossoms adorn the flowering tree every spring.",
     },
