@@ -10,9 +10,11 @@ import Home from './components/home'
 import About from './components/about'
 import IndexPage from './components/index';
 import Notfound from './components/notFound'
-import Flowers from './components/flowers';
+import PerennialFlowers from './components/perennialflowers';
+import AnnualFlowers from './components/annualFlowers';
+import FloweringTrees from './components/floweringTrees';
 import Flower from './components/flower';
-
+import AllFlowers from './components/allFlowers'
 
 
 
@@ -29,7 +31,10 @@ root.render(
            />
          <Route path = '/home' element = {<Home/>}/>
          <Route path = '/about' element = {<About/>}/>
-         <Route path = '/flowers' element = {<Flowers/>}/>
+         <Route path = '/perennialflowers' element = {<PerennialFlowers/>}/>
+         <Route path = '/floweringTrees' element = {<FloweringTrees/>}/>
+         <Route path = '/annualflowers' element = {<AnnualFlowers/>}/>
+         <Route path = '/allFlowers' element = {<AllFlowers/>}/>
          <Route path = "/flowers/:flowerId" element={<Flower/>}/>
         </Route>
 
