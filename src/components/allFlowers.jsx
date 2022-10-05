@@ -3,7 +3,7 @@ import { getAllFlowers } from "../allData";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import pic5 from "../images/allFlowers/womanmodel.jpg"
+// import pic5 from "../images/allFlowers/womanmodel.jpg"
 import { Container} from 'react-bootstrap';
 import Badge from 'react-bootstrap/Badge';
 
@@ -46,57 +46,14 @@ export default function AllFlowers (){
         ))}
     </Row>
 
-
-          {/* <div>
-          {flowers.map((flower) => (
-          <NavLink
-            to={`/flowers/${flower.id}`}
-            key={flower.id}
-          >
-                <Card>
-                    <Card.Body>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src= {flower.src} alt="" />
-                            <Card.Body>
-                                <Card.Text>
-                                    <Card>
-                                        <Card.Body>
-                                        {flower.title}
-                                          <Card.Text>
-                                              {flower.src}
-                                                   </Card.Text>
-                                            </Card.Body>
-                                    </Card>
-                                </Card.Text>
-                              
-                            </Card.Body>
-                        </Card>
-                    </Card.Body>
-                </Card>
-                </NavLink>
-        ))} */}
-
-          
-        {/* </div> */}
-        <div>this is the all flowers page </div>
-        <div className="articles-back">
+        {/* <div>this is the all flowers page </div> */}
+        {/* <div className="articles-back">
       <h1>EXPLORE ARTICLES</h1>
-      {/* <div className="article">
-        {flowers.map((flower) => (
-          <NavLink
-            to={`/flowers/${flower.id}`}
-            key={flower.id}
-          >
-            {flower.src}
-            {flower.title}
-            
-          </NavLink>
-        ))}
-      </div> */}
+   
 
       <h4>copyright Ushama@div 2022</h4>
   
-    </div>
+    </div> */}
 
     </Container>
         </>

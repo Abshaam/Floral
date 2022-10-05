@@ -22,21 +22,23 @@ import pic21 from "./images/allFlowers/rhododendron.jpg"
 import pic22 from "./images/floweringTree/cherrytree.jpg"
 import pic23 from "./images/allFlowers/almondtree.jpg"
 import pic24 from "./images/allFlowers/plumtree.jpg"
-import pic25 from "./images/floweringTree/crabapple.jpg"
-import pic26 from "./images/floweringTree/magnolia.jpg"
-import pic27 from "./images/floweringTree/pearblossom.jpg"
-import pic28 from "./images/floweringTree/kalanchoe.jpg"
-import pic29 from "./images/floweringTree/cacti.jpg"
-import pic30 from "./images/floweringTree/chrismascactus.jpg"
-import pic31 from "./images/floweringTree/orchids.jpg"
-import pic32 from "./images/floweringTree/lilies.jpg"
-import pic33 from "./images/floweringTree/crocus.jpg"
-import pic34 from "./images/floweringTree/tulip.jpg"
-import pic35 from "./images/floweringTree/daffodils.jpg"
-import pic36 from "./images/floweringTree/dahlia.jpg"
-import pic37 from "./images/floweringTree/snowdrop.jpg"
-import pic38 from "./images/floweringTree/bluebells.jpg"
-import pic39 from "./images/floweringTree/iris.jpg"
+import pic25 from "./images/allFlowers/crabapple.jpg"
+import pic26 from "./images/allFlowers/magnolia.jpg"
+import pic27 from "./images/allFlowers/pear.jpg"
+import pic28 from "./images/allFlowers/kalachoe.jpg"
+import pic29 from "./images/allFlowers/cacti.jpg"
+import pic30 from "./images/allFlowers/chrismascactus1.jpg"
+import pic31 from "./images/allFlowers/orchids.jpg"
+import pic32 from "./images/allFlowers/lily.jpg"
+import pic33 from "./images/allFlowers/crocus.jpg"
+import pic34 from "./images/allFlowers/tulips.jpg"
+import pic35 from "./images/allFlowers/daffodils.jpg"
+import pic36 from "./images/allFlowers/dahlia.jpg"
+import pic37 from "./images/allFlowers/snowdrop.jpg"
+import pic38 from "./images/allFlowers/bluebell.jpg"
+import pic39 from "./images/allFlowers/iris.jpg"
+import pic40 from "./images/allFlowers/alium.jpg"
+
 
 
 
@@ -343,8 +345,8 @@ let allFlowers = [
     {
       id: 32,
       src: <img src={pic32} alt=''/>,
-      title: "Lilies",
-      header: "Lilies isolated on a whilte background.",
+      title: "Lily",
+      header: "Lilies isolated on a dark background.",
       description: "Lilies are flowering bulbs that produce some of the most stunning and striking flowers of any plant. Lilies, especially white ones, are also a popular type of wedding flower. In fact, some varieties of lilies are very expensive wedding flowers."
     },
 
@@ -352,7 +354,7 @@ let allFlowers = [
       id: 33,
       src: <img src={pic33} alt=''/>,
       title: "Crocus flowers",
-      header: "Blue Crocus on a white background.",
+      header: "yellow Crocus in the garden.",
       description: "When crocuses bloom every year, it is a sign that spring has arrived. Although crocus flowers come in almost every color, yellow, lilac, and mauve are the most common flowers. There are a wide variety of crocus petals. Some have just one color, whereas others have stripes or multicolored petals"
     },
 
@@ -375,7 +377,7 @@ let allFlowers = [
     {
       id: 36,
       src: <img src={pic36} alt=''/>,
-      title: "Dahlia flowers",
+      title: "Dahlia flower",
       header: "Close up of a huge creme blooming Dahlia flower Cafe au Lait Hybrid.",
       description: "Dahlia plants produce stunning colorful flowers usually in the shape of a ball or star on top of a leafy stem.  Dahlia flowers come in most colors including yellow, white, red, pink, lavender, and even dark burgundy which is nearly black. Some popular dahlia flowers have flower heads in many fascinating color combinations."
     },
@@ -385,16 +387,16 @@ let allFlowers = [
     {
       id: 37,
       src: <img src={pic37} alt=''/>,
-      title: "Snowdrops",
-      header: "Beautifull Spring snowdrop flowers on snow background",
+      title: "Snowdrop",
+      header: "Beautifull Spring snowdrop flower(forget me not)",
       description: "Snowdrops are tiny flowers that have a white bell-shaped flower that hangs down. They are usually one of the first flowers to bloom after winter."
     },
 
     {
       id: 38,
       src: <img src={pic38} alt=''/>,
-      title: "Bluebells",
-      header: "Bluebells isolated on white.",
+      title: "Bluebell",
+      header: "Bluebell isolated on white background",
       description: "Bluebells are another example of an early bloomer bulb flower that grows in the wild. They produce pretty blue or lilac flowers that look like tiny bells dangling from stems."
     },
 
@@ -406,6 +408,15 @@ let allFlowers = [
       description: "Iris is a type of perennial flowering bulb that grows long erect stems with a large flower at the end. Iris plants can start blooming as early as February or March. Some varieties of iris called the Black Iris also produce black flowers."
     },
 
+    {
+      id: 40,
+      src: <img src={pic40} alt=''/>,
+      title: "Alium",
+      header: "Close-up picture of Purple alium onion flower in full frame isolated on white background with copy space.",
+      description: "Iris is a type of perennial flowering bulb that grows long erect stems with a large flower at the end. Iris plants can start blooming as early as February or March. Some varieties of iris called the Black Iris also produce black flowers."
+    },
+
+
   ];
   
   export function getAllFlowers() {
@@ -415,5 +426,45 @@ let allFlowers = [
   export  function getAll(all) {
     return(
       allFlowers.find( flower => flower.id === all)
+    )
+  }
+
+
+  let comments =[
+    {
+      id:1,
+      name: "Ushama",
+      message: "I am all cleared up after reading this article, great work!!"
+    },
+  
+    {
+      id:2,
+      name: "Richeal",
+      message: "Detailed infomation shared in this article. Thank you"
+    },
+  
+    {
+      id:3,
+      name: "Richelle",
+      message: "I clearly understand the rumour that has being going on. Nice"
+    },
+  
+    {
+      id:4,
+      name: "Kristine",
+      message: "I was quiet looking for more insights in this issue. Thank you"
+    }
+  
+  ]
+  
+  export function getComments() {
+    return(
+      comments
+    )
+  }
+  
+  export  function getDat(identity) {
+    return(
+      comments.find( comment => comment.id === identity)
     )
   }

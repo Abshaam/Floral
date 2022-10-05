@@ -2,7 +2,11 @@
 import { useParams, } from "react-router-dom"
 import React from "react";
 import { getAll } from "../allData";
-import AllFlowers from '../components/allFlowers'
+import Card from 'react-bootstrap/Card';
+import { Container } from 'react-bootstrap';
+import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
+import '../css/flower.css'
   
        
 export default function Flower (){
@@ -19,22 +23,44 @@ export default function Flower (){
      
     return(
         <>
-         <main style={{ padding: "1rem"}}>
-            <div className="src" >{data.src}</div>
-            <h2>
-                Name: {data.title}
-            </h2>
-            <h3>
-                {data.header}
-            </h3>
-            <p>
-                {data.description}
-            </p>            
+         <div className="flowerBack"
+        //  style={{ padding: "1rem"}}
+         >
+            {/* <Card className="bg-dark text-white"> */}
+                
+          <Container>
+         <Card className="bg-dark text-white">
+         <h2 className='welcome'>
+          <Badge bg="secondary"> {data.title}</Badge>
+        </h2>
+         {/* <Card> */}
+          <Card.Text>
+          <Card>
+          {data.src}
+          </Card>
+        </Card.Text>
+          {/* </Card> */}
+          <Card >
+          
+      <Card.Body>
+        <Card>
+        <Button variant="primary">{data.header}</Button>
+        <Card.Text>
+         {data.description}
+        </Card.Text>
+        </Card>
+       
+      </Card.Body>
+    </Card>
+        </Card>
 
-           
-            <AllFlowers/>
+        </Container>  
+            </div>     
+            {/* <AllFlowers/> */}
 
-         </main>
+        <Container></Container>
+
+         
   
         </>
     )
