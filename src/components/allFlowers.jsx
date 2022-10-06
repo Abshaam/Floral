@@ -34,11 +34,13 @@ export default function AllFlowers (){
           {/* <Card.Img variant="top" src= {flower.src} alt="" /> */}
             <Card.Body>
               <Card.Title> {flower.title}</Card.Title>
-              <Card.Text>
               {/* <Card> */}
+              <Card>
+              <Card>
               {flower.src}
+              </Card>
+              </Card>
               {/* </Card> */}
-              </Card.Text>
             </Card.Body>
           </Card>
         </Col>
