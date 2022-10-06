@@ -1,11 +1,20 @@
 import React, { useState } from "react";
-import {getComments} from '../data'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
+import Card from "react-bootstrap/Card";
+
+import {getComments} from '../allData'
 import '../css/comment.css'
 
 
 export default function Comment() {
     let comments = getComments()
 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     const [input, setInput] = useState('')
     const [messag, setMessag] = useState('')
 
@@ -19,56 +28,86 @@ export default function Comment() {
         
         setInput('')
         setMessag('')
+        handleClose()
         
       }
 
       return(
+
+        <>
         <div className="comments-back">
 
         <div className="comments-page">
-        <h1>
-           REVIEWS
-       </h1>
+
         {comments.map((comment) => (
 
-      <div className="comments"
-        key={comment.id}>
+<div className="comments"
+  key={comment.id}>
 
-       <h2>
-          {comment.name}
-      </h2>
-        <p>
-        {comment.message}
-        </p>
-        
-        
-      </div>
-    ))}
+ <h2>
+    {comment.name}
+</h2>
+  <p>
+  {comment.message}
+  </p>
+  
+  
+</div>
+))}
+
+           <Card.Text>
+            Add a comment and view it above
+            </Card.Text>
+        <Button variant="primary" onClick={handleShow}>
+        Add Comment
+         </Button>
+
+         <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>COMMENT</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type={"text"}
+              value={input} 
+             onChange={(e) => setInput(e.target.value)}
+                placeholder="Type your name here"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Comment</Form.Label>
+              <Form.Control
+               as="textarea" 
+               rows={3} 
+               placeholder='Type your message here' 
+               type={"text"}
+               value={messag} 
+              onChange={(e) => setMessag (e.target.value)}/>
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" 
+          disabled= {!input} onClick = {addComment}>
+            Add Comment
+          </Button>
+        </Modal.Footer>
+      </Modal>
             
         </div>
 
-        <div className="add-comment">
-
-            <h2>COMMENT</h2>
-            <input 
-             placeholder='Type your name here' 
-              type={"text"}
-              value={input} 
-             onChange={(e) => setInput(e.target.value)}>
-             </input>
-             <br/>
-
-             <input 
-             placeholder='Type your message here' 
-              type={"text"}
-              value={messag} 
-             onChange={(e) => setMessag (e.target.value)}>
-             </input>
-
-             <button  disabled= {!input} onClick = {addComment}>Add comment</button>
         </div>
-
-        </div>
+        </>
 
       )
 }

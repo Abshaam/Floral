@@ -42,8 +42,7 @@ export default function About (){
         <Card.Text>
           Floral is an application that seeks to educate users about flowers. Flowers can mean so much without saying a word. There is something about receiving the gift of flowers - it means that someone took the time to pick out an arrangement and have it delivered specifically to you.  You are important to them. 
 
-Now that your thoughtful gift has arrived, what's next? Taking care of your gift so will continue to bloom and bring happiness wherever it may be. Flowers from every season can mean so many things, and they are always a special gift. The thought that goes into each arrangement is no distracted thought.  Once the order was placed, our thoughtful floral artisans put together your arrangement by hand. Every time. There will never be another arrangement exactly like yours. It's unique, and a thing to be cherished.
-
+Now that your thoughtful gift has arrived, what's next?  Once the order was placed, our thoughtful floral artisans put together your arrangement by hand. There will never be another arrangement exactly like yours. It's unique, and a thing to be cherished.
 Keeping your gift fresh and blooming, along with knowing some of the meanings of the different types of flowers you receive, lets you know that people are thinking of you.  Explore the topics below to learn more about how to take care of your gift, what the flowers themselves represent, and more!
 
 

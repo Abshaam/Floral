@@ -35,9 +35,9 @@ export default function AllFlowers (){
             <Card.Body>
               <Card.Title> {flower.title}</Card.Title>
               <Card.Text>
-              <Card>
+              {/* <Card> */}
               {flower.src}
-              </Card>
+              {/* </Card> */}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -54,6 +54,9 @@ export default function AllFlowers (){
       <h4>copyright Ushama@div 2022</h4>
   
     </div> */}
+    <Card.Footer>
+    <h4 className='footer'> Designed by Ushy@div 2022</h4>
+    </Card.Footer>
 
     </Container>
         </>
