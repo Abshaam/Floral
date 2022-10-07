@@ -1,47 +1,43 @@
-import pic1 from "./images/pansySeedling.jpg"
-import pic2 from "./images/primerose.jpg"
-import pic3 from "./images/marigold.jpg"
-import pic4 from "./images/snapdragon.jpg"
-import pic5 from "./images/geranium.jpg"
-import pic6 from "./images/sunflower.jpg"
-import pic7 from "./images/begonia.jpg"
-import pic8 from "./images/pertunia.jpg"
-import pic9 from "./images/chrysanthemum.jpg"
-import pic10 from "./images/sweetpea.jpg"
-import pic11 from "./images/viola.jpg"
-import pic12 from "./images/chrysanthemum.jpg"
+import pic1 from "./images/allFlowers/pansySeedling.jpg"
+import pic2 from "./images/allFlowers/primerose1.jpg"
+import pic3 from "./images/allFlowers/marigold.jpg"
+import pic4 from "./images/allFlowers/snapdragon.jpg"
+import pic5 from "./images/allFlowers/geranium.jpg"
+import pic6 from "./images/allFlowers/sunflower.jpg"
+import pic7 from "./images/allFlowers/begonia.jpg"
+import pic8 from "./images/allFlowers/petunia.jpg"
+import pic9 from "./images/allFlowers/chrysanthemums.jpg"
+import pic10 from "./images/allFlowers/sweetpea.jpg"
+import pic11 from "./images/allFlowers/viola.jpg"
+import pic12 from "./images/allFlowers/zinnia.jpg"
 import pic13 from "./images/perennial/daylily.jpg"
 import pic14 from "./images/perennial/peony.jpg"
-import pic15 from "./images/perennial/shasta.jpg"
+import pic15 from "./images/allFlowers/shasta.jpg"
 import pic16 from "./images/perennial/lavender.jpg"
-import pic17 from "./images/perennial/lilac.jpg"
+import pic17 from "./images/allFlowers/lilac.jpg"
 import pic18 from "./images/perennial/hibiscus.jpg"
 import pic19 from "./images/perennial/hydrangea.jpg"
 import pic20 from "./images/perennial/azalea.jpg"
-import pic21 from "./images/perennial/rhododendron.jpg"
+import pic21 from "./images/allFlowers/rhododendron.jpg"
 import pic22 from "./images/floweringTree/cherrytree.jpg"
-import pic23 from "./images/floweringTree/almondtree.jpg"
-import pic24 from "./images/floweringTree/plumtree.jpg"
-import pic25 from "./images/floweringTree/crabapple.jpg"
-import pic26 from "./images/floweringTree/magnolia.jpg"
-import pic27 from "./images/floweringTree/pearblossom.jpg"
-import pic28 from "./images/floweringTree/kalanchoe.jpg"
-import pic29 from "./images/floweringTree/cacti.jpg"
-import pic30 from "./images/floweringTree/chrismascactus.jpg"
-import pic31 from "./images/floweringTree/orchids.jpg"
-import pic32 from "./images/floweringTree/lilies.jpg"
-import pic33 from "./images/floweringTree/crocus.jpg"
-import pic34 from "./images/floweringTree/tulip.jpg"
-import pic35 from "./images/floweringTree/daffodils.jpg"
-import pic36 from "./images/floweringTree/dahlia.jpg"
-import pic37 from "./images/floweringTree/snowdrop.jpg"
-import pic38 from "./images/floweringTree/bluebells.jpg"
-import pic39 from "./images/floweringTree/iris.jpg"
-
-
-
-
-
+import pic23 from "./images/allFlowers/almondtree.jpg"
+import pic24 from "./images/allFlowers/plumtree.jpg"
+import pic25 from "./images/allFlowers/crabapple.jpg"
+import pic26 from "./images/allFlowers/magnolia.jpg"
+import pic27 from "./images/allFlowers/pear.jpg"
+import pic28 from "./images/allFlowers/kalachoe.jpg"
+import pic29 from "./images/allFlowers/cacti.jpg"
+import pic30 from "./images/allFlowers/chrismascactus1.jpg"
+import pic31 from "./images/allFlowers/orchids.jpg"
+import pic32 from "./images/allFlowers/lily.jpg"
+import pic33 from "./images/allFlowers/crocus.jpg"
+import pic34 from "./images/allFlowers/tulips.jpg"
+import pic35 from "./images/allFlowers/daffodils.jpg"
+import pic36 from "./images/allFlowers/dahlia.jpg"
+import pic37 from "./images/allFlowers/snowdrop.jpg"
+import pic38 from "./images/allFlowers/bluebell.jpg"
+import pic39 from "./images/allFlowers/iris.jpg"
+import pic40 from "./images/allFlowers/alium.jpg"
 
 
 
@@ -263,7 +259,15 @@ let perennialFlowers = [
       title: "Rhododendron",
       header: "Pink blossom of rhododendron with green leaves over a white background",
       description: "Rhododendron is a large bush that produces clusters of large flowers. This type of bush is often used in hedgerows where they produce amazing blooms from early spring to the middle of summer."
-    }
+    },
+
+    {
+      id: 40,
+      src: <img src={pic40} alt=''/>,
+      title: "Alium",
+      header: "Close-up picture of Purple alium onion flower in full frame isolated on white background with copy space.",
+      description: "Allium is a genus of monocotyledonous flowering plants that includes hundreds of species, including the cultivated onion, garlic, scallion, shallot, leek, and chives. The generic name Allium is the Latin word for garlic, and the type species for the genus is Allium sativum which means cultivated garlic"
+    },
   ];
   
   export function getPerennialFlowers() {
@@ -437,10 +441,18 @@ let perennialFlowers = [
       description: "Iris is a type of perennial flowering bulb that grows long erect stems with a large flower at the end. Iris plants can start blooming as early as February or March. Some varieties of iris called the Black Iris also produce black flowers."
     },
 
+    // {
+    //   id: 40,
+    //   src: <img src={pic40} alt=''/>,
+    //   title: "Alium",
+    //   header: "Close-up picture of Purple alium onion flower in full frame isolated on white background with copy space.",
+    //   description: "Iris is a type of perennial flowering bulb that grows long erect stems with a large flower at the end. Iris plants can start blooming as early as February or March. Some varieties of iris called the Black Iris also produce black flowers."
+    // },
+
   ];
   
   export function getFloweringTrees() {
-    return perennialFlowers;
+    return floweringTrees;
   }
 
   export  function getMore(more) {

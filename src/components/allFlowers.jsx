@@ -31,16 +31,13 @@ export default function AllFlowers (){
           >
         <Col>
           <Card>
-          {/* <Card.Img variant="top" src= {flower.src} alt="" /> */}
             <Card.Body>
               <Card.Title> {flower.title}</Card.Title>
-              {/* <Card> */}
               <Card>
               <Card>
               {flower.src}
               </Card>
               </Card>
-              {/* </Card> */}
             </Card.Body>
           </Card>
         </Col>
@@ -48,14 +45,7 @@ export default function AllFlowers (){
         ))}
     </Row>
 
-        {/* <div>this is the all flowers page </div> */}
-        {/* <div className="articles-back">
-      <h1>EXPLORE ARTICLES</h1>
-   
-
-      <h4>copyright Ushama@div 2022</h4>
-  
-    </div> */}
+     
     <Card.Footer>
     <h4 className='footer'> Designed by Ushy@div 2022</h4>
     </Card.Footer>
@@ -68,27 +58,3 @@ export default function AllFlowers (){
 
 
 
-
-// export default function articles() {
-//   let articles = getArticles();
-//   return (
-//     <div className="articles-back">
-//       <h1>EXPLORE ARTICLES</h1>
-//       <div className="article">
-//         {flowers.map((article) => (
-//           <NavLink
-//             to={`/articles/${article.id}`}
-//             key={flower.id}
-//           >
-//             {flower.src}
-//             {flowere.title}
-            
-//           </NavLink>
-//         ))}
-//       </div>
-
-//       <h4>copyright Ushama@div 2022</h4>
-  
-//     </div>
-//   );
-// }

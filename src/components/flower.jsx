@@ -37,7 +37,7 @@ export default function Flower() {
               <Card.Body>
                 <Card>
                   <Button variant="primary">{data.header}</Button>
-                  <Card.Text >{data.description}</Card.Text>
+                  <Card.Text className='des'>{data.description}</Card.Text>
                 </Card>
               </Card.Body>
             </Card>

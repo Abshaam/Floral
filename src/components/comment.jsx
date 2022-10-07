@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
 
 import {getComments} from '../allData'
 import '../css/comment.css'
@@ -35,7 +36,7 @@ export default function Comment() {
       return(
 
         <>
-        <div className="comments-back">
+        <Container>
 
         <div className="comments-page">
 
@@ -106,7 +107,7 @@ export default function Comment() {
             
         </div>
 
-        </div>
+        </Container>
         </>
 
       )
